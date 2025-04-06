@@ -5,18 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informações do Dispositivo</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <script src="./scripts.js"></script>
   <body>
-    <h1>Informações do Dispositivo</h1>
-    <h2>Tela</h2>
-    <h3>Viewport Size:</h3>
-    <p id="viewport-size"></p>
-    <h3>Screen Size:</h3>
-    <p id="screen-size"></p>
-    <h3>Device Pixel Ratio:</h3>
-    <p id="device-pixel-ratio"></p>
-    <h2>User Agent:</h2>
-    <p id="user-agent"></p>
+    <main class="container">
+      <h1>📱 Informações do Dispositivo</h1>
+
+      <section class="info-card">
+        <h2>Tela</h2>
+        <div class="info">
+          <h3>Janela de visualização (Viewport):</h3>
+          <p id="viewport-size"></p>
+        </div>
+        <div class="info">
+          <h3>Resolução Física:</h3>
+          <p id="screen-size"></p>
+        </div>
+        <div class="info">
+          <h3>Proporção de Pixels (Pixel Ratio):</h3>
+          <p id="device-pixel-ratio"></p>
+        </div>
+        <div class="info">
+          <h3>Orientação:</h3>
+          <p id="orientation"></p>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <h2>Dispositivo</h2>
+        <div class="info">
+          <h3>Tipo:</h3>
+          <p id="device-type"></p>
+        </div>
+        <div class="info">
+          <h3>Sistema Operacional:</h3>
+          <p id="os"></p>
+        </div>
+        <div class="info">
+          <h3>Plataforma:</h3>
+          <p id="platform"></p>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <h2>Navegador</h2>
+        <div class="info">
+          <h3>User Agent:</h3>
+          <p id="user-agent"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
